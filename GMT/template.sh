@@ -7,7 +7,7 @@ gmt set PS_MEDIA A4
 # start gmt session
 gmt psxy -R0/1/0/1 -JX1c -T -K -P > $out_ps
   
-echo 0 0 | gmt psxy -R-100/100/-80/120 -JX10 -Sc2 -Ba20g10/a20g10 -P -K >> $out_ps
+echo 0 0 | gmt psxy -R-100/100/-80/120 -JX10 -Sc2 -Ba20g10/a20g10 -P -O -K >> $out_ps
 echo 20 20 | gmt psxy -R-100/100/-80/120 -JX10 -Sc2 -Ba20g10/a20g10 -P -O -K >> $out_ps
 echo -20 -20 | gmt psxy -R-100/100/-80/120 -JX10 -Sc2 -Ba20g10/a20g10 -P -O -K >> $out_ps
 
